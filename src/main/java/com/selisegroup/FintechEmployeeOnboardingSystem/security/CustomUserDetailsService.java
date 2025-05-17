@@ -1,7 +1,5 @@
 package com.selisegroup.FintechEmployeeOnboardingSystem.security;
 
-
-
 import com.selisegroup.FintechEmployeeOnboardingSystem.model.User;
 import com.selisegroup.FintechEmployeeOnboardingSystem.repository.UserRepository;
 import org.springframework.security.core.userdetails.UserDetails;

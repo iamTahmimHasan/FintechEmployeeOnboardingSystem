@@ -6,16 +6,10 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class ModelMapperConfig {
-
     @Bean
     public ModelMapper modelMapper() {
         ModelMapper modelMapper = new ModelMapper();
-
-        // Add any custom configurations if needed
-        // For example:
-        // modelMapper.getConfiguration()
-        //     .setMatchingStrategy(MatchingStrategies.STRICT);
-
+        // Add any custom configurations here
         return modelMapper;
     }
 }
