@@ -2,12 +2,18 @@ package com.selisegroup.FintechEmployeeOnboardingSystem;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class FintechEmployeeOnboardingSystemApplication {
+public class FintechEmployeeOnboardingSystemApplication extends SpringBootServletInitializer {
+
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+		return application.sources(FintechEmployeeOnboardingSystemApplication.class);
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(FintechEmployeeOnboardingSystemApplication.class, args);
 	}
-
 }
